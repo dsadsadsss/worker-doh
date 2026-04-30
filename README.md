@@ -4,4 +4,4 @@
 
 自建DNS 
 
-https://doh.xuexi365.eu.org/dns-query
+doh.xuexi365.eu.org/dns-query
