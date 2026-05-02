@@ -4,7 +4,7 @@
 // 然后添加规则：将需要的路径（/* 或指定路径）绑定到此 Snippet
 
 const DOH_SERVERS = [
-    'https://security.cloudflare-dns.com/dns-query',
+    'https://dns.google/dns-query',
     'https://dns.google/dns-query',
     'https://dns.quad9.net/dns-query',
     'https://doh.opendns.com/dns-query',
