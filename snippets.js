@@ -71,6 +71,16 @@ footer a:hover{color:#f0f0f2}
     </div>
   </div>
 
+  <div class="card">
+    <div class="card-head"><span>健康检查</span><span>HTTPS · Port 443</span></div>
+    <div class="card-body">
+      <div class="row">
+        <code id="ep-health"></code>
+        <button class="copy" id="btn-health" onclick="cpHealth()">复制</button>
+      </div>
+    </div>
+  </div>
+
   <div class="grid">
     <div class="stat"><b>4</b><span>上游服务器</span></div>
     <div class="stat"><b>3</b><span>支持格式</span></div>
@@ -103,11 +113,6 @@ footer a:hover{color:#f0f0f2}
 <span class="dim">Accept: application/dns-json</span></pre></div>
   </div>
 
-  <div style="margin-bottom:.5rem;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#8a8a96">健康检查</div>
-  <div class="card">
-    <div class="card-body"><pre><span class="hl">GET</span> /health  <span class="dim">→ JSON 状态响应</span></pre></div>
-  </div>
-
   <footer style="margin-top:2rem">
     <p>基于 <a href="https://developers.cloudflare.com/rules/snippets/" target="_blank">Cloudflare Snippets</a> 部署 &nbsp;·&nbsp; 协议 <a href="https://opensource.org/licenses/0BSD" target="_blank">0BSD</a></p>
   </footer>
@@ -115,10 +120,19 @@ footer a:hover{color:#f0f0f2}
 <script>
 // 动态读取当前域名，自动生成端点地址
 document.getElementById('ep').textContent = window.location.origin + '/dns-query';
+document.getElementById('ep-health').textContent = window.location.origin + '/health';
 
 function cp(){
   navigator.clipboard.writeText(document.getElementById('ep').textContent).then(()=>{
     const b=document.getElementById('btn');
+    b.textContent='已复制 ✓';b.classList.add('ok');
+    setTimeout(()=>{b.textContent='复制';b.classList.remove('ok')},2000);
+  });
+}
+
+function cpHealth(){
+  navigator.clipboard.writeText(document.getElementById('ep-health').textContent).then(()=>{
+    const b=document.getElementById('btn-health');
     b.textContent='已复制 ✓';b.classList.add('ok');
     setTimeout(()=>{b.textContent='复制';b.classList.remove('ok')},2000);
   });
