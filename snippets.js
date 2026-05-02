@@ -59,7 +59,7 @@ footer a:hover{color:#f0f0f2}
 <div class="wrap">
   <div class="tag">DNS over HTTPS</div>
   <h1>安全、快速的<br/><span>DNS 加密代理</span></h1>
-  <p class="sub">基于 Cloudflare Snippets，将 DNS 查询转为 HTTPS 请求，自动故障转移至多个上游服务器。</p>
+  <p class="sub">基于 Cloudflare，将 DNS 查询转为 HTTPS 请求，自动故障转移至多个上游服务器。</p>
 
   <div class="card">
     <div class="card-head"><span>DoH 端点</span><span>HTTPS · Port 443</span></div>
