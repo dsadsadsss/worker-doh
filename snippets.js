@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: 0BSD
-// Cloudflare Snippets 版本
+// Cloudflare workers+Snippets 版本
 // 部署方式：Cloudflare Dashboard → 你的域名 → Snippets → 新建 Snippet → 粘贴此代码
 // 然后添加规则：将需要的路径（/* 或指定路径）绑定到此 Snippet
 
