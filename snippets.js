@@ -114,7 +114,7 @@ footer a:hover{color:#f0f0f2}
   </div>
 
   <footer style="margin-top:2rem">
-    <p>基于 <a href="https://developers.cloudflare.com/rules/snippets/" target="_blank">Cloudflare Snippets</a> 部署 &nbsp;·&nbsp; 协议 <a href="https://opensource.org/licenses/0BSD" target="_blank">0BSD</a></p>
+    <p>基于 <a href="https://developers.cloudflare.com/rules/snippets/" target="_blank">Cloudflare</a> 部署 &nbsp;·&nbsp; 协议 <a href="https://opensource.org/licenses/0BSD" target="_blank">0BSD</a></p>
   </footer>
 </div>
 <script>
