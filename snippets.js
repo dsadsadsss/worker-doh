@@ -65,7 +65,7 @@ footer a:hover{color:#f0f0f2}
     <div class="card-head"><span>DoH 端点</span><span>HTTPS · Port 443</span></div>
     <div class="card-body">
       <div class="row">
-        <code id="ep">https://your-site/dns-query</code>
+        <code id="ep"></code>
         <button class="copy" id="btn" onclick="cp()">复制</button>
       </div>
     </div>
@@ -113,10 +113,13 @@ footer a:hover{color:#f0f0f2}
   </footer>
 </div>
 <script>
+// 动态读取当前域名，自动生成端点地址
+document.getElementById('ep').textContent = window.location.origin + '/dns-query';
+
 function cp(){
   navigator.clipboard.writeText(document.getElementById('ep').textContent).then(()=>{
     const b=document.getElementById('btn');
-    b.textContent='已复制 ?';b.classList.add('ok');
+    b.textContent='已复制 ✓';b.classList.add('ok');
     setTimeout(()=>{b.textContent='复制';b.classList.remove('ok')},2000);
   });
 }
