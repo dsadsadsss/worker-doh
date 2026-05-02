@@ -1,5 +1,4 @@
-# snippets-doh
+# snippets-workers-doh
 
-反代cloudflare家的doh
+利用cloudflare的workers或snippets自建DOH
 
-自建doh
