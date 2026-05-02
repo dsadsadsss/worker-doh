@@ -90,7 +90,7 @@ footer a:hover{color:#f0f0f2}
 
   <div style="margin-bottom:.5rem;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#8a8a96">上游服务器</div>
   <div class="up-grid">
-    <div class="up"><span class="dot"></span><div><div class="up-name">Cloudflare Security</div><div class="up-url">security.cloudflare-dns.com</div></div></div>
+    <div class="up"><span class="dot"></span><div><div class="up-name">Cloudflare Dns</div><div class="up-url">cloudflare-dns.com</div></div></div>
     <div class="up"><span class="dot"></span><div><div class="up-name">Google DNS</div><div class="up-url">dns.google</div></div></div>
     <div class="up"><span class="dot"></span><div><div class="up-name">Quad9</div><div class="up-url">dns.quad9.net</div></div></div>
     <div class="up"><span class="dot"></span><div><div class="up-name">OpenDNS</div><div class="up-url">doh.opendns.com</div></div></div>
