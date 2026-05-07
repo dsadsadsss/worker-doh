@@ -1,4 +1,4 @@
-# snippets-workers-doh
+# snippets-workers自建doh
 
 利用cloudflare的workers或snippets自建DOH
 
